@@ -23,3 +23,10 @@
 .bg-facebook {
   background: #3b5998;
 }
+
+a {
+  color: black;
+  &:hover {
+    text-decoration: none;
+  }
+}

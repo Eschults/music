@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="search">
+        <%= form_tag search_track_path do %>
+          <%= text_field_tag :search_query, nil, class: "form-control" %>
+        <% end %>
+      </div>
+      <%= react_component "TrackList",
+        render(template: 'tracks/index.json.jbuilder'),
+        prerender: false %>
+    </div>
+  </div>
+</div>
