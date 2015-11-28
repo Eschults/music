@@ -30,3 +30,13 @@ a {
     text-decoration: none;
   }
 }
+.form-control {
+  box-shadow: none;
+  border: 1px solid #E6E6E6;
+  font-weight: lighter;
+  color: #666666;
+  &:focus {
+    box-shadow: none;
+    border-color: black;
+  }
+}

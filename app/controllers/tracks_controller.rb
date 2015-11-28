@@ -27,7 +27,7 @@ class TracksController < ApplicationController
     redirect_to(root_path(id: @tracks.map{ |track| track.id }))
   end
 
-  def new
-
+  def show
+    @track = Track.find(params[:id])
   end
 end

@@ -10,7 +10,10 @@ var TrackListItem = React.createClass({
         <div className="track-body">
           <a href={this.props.track.url} target="_blank" className="track-link">{this.props.track.name}</a>
         </div>
+        <div className="track-controls">
+          <a className="track-controls-download" href={Routes.track_path(this.props.track.id)}>Download</a>
+        </div>
       </div>
     )
-  }
+  },
 })
